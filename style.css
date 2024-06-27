@@ -1,0 +1,53 @@
+.Navigation{
+    display: flex;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #a1c0a166;
+}
+.NavButton{
+    margin: auto 20px;
+    padding: 10px 20px;
+    height: auto;
+    background-color:#92c499;
+    border-radius: 9px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #86b791;
+    transition: padding 0.5s ease;
+}
+.NavButton:hover{
+    transition: 0.3s;
+    padding: 12px 24px;
+    background-color: #77a780;
+    border-color: #6a966b;
+}
+.MenuButton{
+    background-color:#92c49e;
+    border-radius: 9px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #86b794;
+}
+.MenuButton:hover{
+    background-color: #77a779;
+    border-color: #6a9671;
+}
+.dropdown-menu{
+    display: inline-block;
+}
+.dropdown-menu-button-menu{
+    background-color: #92c495;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: #86b790 solid 3px;
+    border-radius: 9px;
+}
+.dropdown-menu-button{
+    background-color: #00000000;
+    border-width: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
