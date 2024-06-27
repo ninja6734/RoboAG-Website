@@ -1,53 +1,61 @@
+:root{
+    --bg-style: #a1c0a166;
+    --NavButtons: #a1c0a1;
+    --NavButtonsHover: #769876;
+    --NavButtonsBorder: #7ca07c;
+    --NavButtonsBorderHover: #5f7c5f;
+}
+
 .Navigation{
     display: flex;
     width: 100%;
     padding: 20px 10px;
-    background-color: #a1c0a166;
+    background-color: var(--bg-style);
 }
 .NavButton{
     margin: auto 20px;
     padding: 10px 20px;
     height: auto;
-    background-color:#92c499;
+    background-color: var(--NavButtons);
     border-radius: 9px;
     border-width: 4px;
     border-style: solid;
-    border-color: #86b791;
+    border-color: var(--NavButtonsBorder);
     transition: padding 0.5s ease;
 }
 .NavButton:hover{
-    transition: 0.3s;
-    padding: 12px 24px;
-    background-color: #77a780;
-    border-color: #6a966b;
+    background-color: var(--NavButtonsHover);
+    border-color: var(--NavButtonsBorderHover);
 }
 .MenuButton{
-    background-color:#92c49e;
+    background-color: var(--NavButtons);
     border-radius: 9px;
     border-width: 4px;
     border-style: solid;
-    border-color: #86b794;
+    border-color: var(--NavButtonsBorder);
     float: right;
 }
-.MenuButton:hover{
-    background-color: #77a779;
-    border-color: #6a9671;
+.dropdown:hover .MenuButton{
+    background-color: var(--NavButtonsHover);
+    border-color: var(--NavButtonsBorderHover);
 }
 .dropdown-menu{
     display: none;
     position: absolute;
     margin-top: 42px;
+    padding: 13px;
+    background-color: var(--bg-style);
 }
-.MenuButton:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu{
     display: block !important;
 }
 .dropdown-menu-button-menu{
-    background-color: #92c495;
+    background-color: var(--NavButtons);
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    border: #86b790 solid 3px;
+    border: var(--NavButtonsBorder) solid 3px;
     border-radius: 9px;
 }
 .dropdown-menu-button{
@@ -56,4 +64,8 @@
     width: 100%;
     height: 100%;
     text-align: left;
+}
+.dropdown-menu-button-menu:hover{
+    background-color: var(--NavButtonsHover);
+    border-color: var(--NavButtonsBorderHover);
 }
