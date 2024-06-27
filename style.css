@@ -27,13 +27,19 @@
     border-width: 4px;
     border-style: solid;
     border-color: #86b794;
+    float: right;
 }
 .MenuButton:hover{
     background-color: #77a779;
     border-color: #6a9671;
 }
 .dropdown-menu{
-    display: inline-block;
+    display: none;
+    position: absolute;
+    margin-top: 42px;
+}
+.MenuButton:hover .dropdown-menu{
+    display: block !important;
 }
 .dropdown-menu-button-menu{
     background-color: #92c495;
