@@ -1,16 +1,20 @@
 :root{
-    --bg-style: #a1c0a166;
+    --bg-style: #ddeedb;
+    --nav-bg-style: #a1c0a166;
     --NavButtons: #a1c0a1;
     --NavButtonsHover: #769876;
     --NavButtonsBorder: #7ca07c;
     --NavButtonsBorderHover: #5f7c5f;
 }
-
+body{
+    background-color: var(--bg-style);
+    margin: 0px;
+}
 .Navigation{
     display: flex;
     width: 100%;
     padding: 20px 10px;
-    background-color: var(--bg-style);
+    background-color: var(--nav-bg-style);
 }
 .NavButton{
     margin: auto 20px;
@@ -68,4 +72,11 @@
 .dropdown-menu-button-menu:hover{
     background-color: var(--NavButtonsHover);
     border-color: var(--NavButtonsBorderHover);
+}
+.content{
+    margin: 16px;
+    display: flex;
+}
+.content #RoboterAGLogo{
+    min-width: inherit;
 }
