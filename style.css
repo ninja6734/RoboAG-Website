@@ -13,8 +13,12 @@ body{
 * {
     font-family: "Sarabun", sans-serif;
 }
+img {
+    max-width: 100%;
+}
 .Navigation{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 20px 10px;
     background-color: var(--content-bg-style);
@@ -41,8 +45,9 @@ body{
     border-style: solid;
     border-color: var(--NavButtonsBorder);
 }
-.dropdown {
-    justify-self: right;
+.dropdown{
+    margin-left: auto;
+    margin-right: 40px;
 }
 .dropdown:hover .MenuButton{
     background-color: var(--NavButtonsHover);
@@ -51,6 +56,7 @@ body{
 .dropdown-menu{
     display: none;
     position: absolute;
+    right: 30px;
     padding: 13px;
     background-color: var(--bg-style);
 }
@@ -82,6 +88,7 @@ body{
     margin: 16px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .content #RoboterAGLogo{
     min-width: inherit;
