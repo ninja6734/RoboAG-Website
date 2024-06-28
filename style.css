@@ -1,6 +1,6 @@
 :root{
     --bg-style: #ddeedb;
-    --nav-bg-style: #a1c0a166;
+    --content-bg-style: #a1c0a166;
     --NavButtons: #a1c0a1;
     --NavButtonsHover: #769876;
     --NavButtonsBorder: #7ca07c;
@@ -10,11 +10,14 @@ body{
     background-color: var(--bg-style);
     margin: 0px;
 }
+* {
+    font-family: "Sarabun", sans-serif;
+}
 .Navigation{
     display: flex;
     width: 100%;
     padding: 20px 10px;
-    background-color: var(--nav-bg-style);
+    background-color: var(--content-bg-style);
 }
 .NavButton{
     margin: auto 20px;
@@ -37,7 +40,9 @@ body{
     border-width: 4px;
     border-style: solid;
     border-color: var(--NavButtonsBorder);
-    float: right;
+}
+.dropdown {
+    justify-self: right;
 }
 .dropdown:hover .MenuButton{
     background-color: var(--NavButtonsHover);
@@ -46,7 +51,6 @@ body{
 .dropdown-menu{
     display: none;
     position: absolute;
-    margin-top: 42px;
     padding: 13px;
     background-color: var(--bg-style);
 }
@@ -56,6 +60,7 @@ body{
 .dropdown-menu-button-menu{
     background-color: var(--NavButtons);
     width: 200px;
+    margin: 10px auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -76,7 +81,23 @@ body{
 .content{
     margin: 16px;
     display: flex;
+    justify-content: center;
 }
 .content #RoboterAGLogo{
     min-width: inherit;
+}
+.content-block{
+    padding: 12px;
+    background-color: var(--content-bg-style);
+    margin: 12px;
+}
+.content-block .alter-text{
+    text-align: center;
+}
+.content-block .paragraph{
+    margin: 6px auto;
+}
+.hervorheben{
+    color: #303736;
+    font-weight: 600;
 }
