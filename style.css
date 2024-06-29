@@ -1,10 +1,11 @@
 :root{
-    --bg-style: #ddeedb;
-    --content-bg-style: #a1c0a166;
-    --NavButtons: #a1c0a1;
-    --NavButtonsHover: #769876;
-    --NavButtonsBorder: #7ca07c;
-    --NavButtonsBorderHover: #5f7c5f;
+    --bg-style: #eedbdb;
+    --content-bg-style: #dcb7b7c4;
+    --NavButtons: #c0a1a1;
+    --NavButtonsHover: #987676;
+    --NavButtonsBorder: #a07c7c;
+    --NavButtonsBorderHover: #7c5f5f;
+    --hervorheben: #373030;
 }
 body{
     background-color: var(--bg-style);
@@ -18,13 +19,14 @@ img {
 }
 .Navigation{
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     width: 100%;
     padding: 20px 10px;
     background-color: var(--content-bg-style);
+    align-content: center;
 }
 .NavButton{
-    margin: auto 20px;
     padding: 10px 20px;
     height: auto;
     background-color: var(--NavButtons);
@@ -37,6 +39,9 @@ img {
 .NavButton:hover{
     background-color: var(--NavButtonsHover);
     border-color: var(--NavButtonsBorderHover);
+}
+.NavButtonImg{
+    height: 32px;
 }
 .MenuButton{
     background-color: var(--NavButtons);
@@ -105,6 +110,25 @@ img {
     margin: 6px auto;
 }
 .hervorheben{
-    color: #303736;
+    color: var(--hervorheben);
     font-weight: 600;
+}
+.teamPhotos{
+    position: absolute;
+    bottom: 7%;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0px;
+    background-color: var(--content-bg-style);
+}
+.teamPhotosContainer{
+    position: relative;
+}
+#teamPhotosContainerContainer{
+    display: block;
+}
+#teamPhotosCont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
