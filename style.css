@@ -129,9 +129,11 @@ a{
     position: relative;
 }
 #teamPhotosContainerContainer{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 #teamPhotosCont{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
