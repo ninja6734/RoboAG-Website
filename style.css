@@ -17,6 +17,10 @@ body{
 img {
     max-width: 100%;
 }
+a{
+    color: var(--hervorheben);
+    font-weight: 600;
+}
 .Navigation{
     display: flex;
     gap: 20px;
@@ -131,4 +135,22 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+.alter-text{
+    text-align: center;
+}
+.Übersicht{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+#LigenLinks{
+    display: block;
+    min-width: fit-content;
+}
+.LigenPictureShowcase{
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
