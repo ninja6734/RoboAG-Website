@@ -151,7 +151,6 @@ a{
     min-width: fit-content;
 }
 .LigenPictureShowcase{
-    margin-top: 5%;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 25% 25% 25% 25%;
