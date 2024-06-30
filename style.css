@@ -1,6 +1,7 @@
 :root{
     --bg-style: #eedbdb;
     --content-bg-style: #dcb7b7c4;
+    --second-content-bg-style: #bd9b9bc4;
     --NavButtons: #c0a1a1;
     --NavButtonsHover: #987676;
     --NavButtonsBorder: #a07c7c;
@@ -107,6 +108,11 @@ a{
     background-color: var(--content-bg-style);
     margin: 12px;
 }
+.content-block-inner{
+    padding: 12px;
+    background-color: var(--second-content-bg-style);
+    margin: 12px;
+}
 .content-block .alter-text{
     text-align: center;
 }
@@ -143,6 +149,8 @@ a{
 }
 .Übersicht{
     display: flex;
+    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -154,4 +162,11 @@ a{
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 25% 25% 25% 25%;
+}
+.LigenPhoto{
+    object-fit: fill;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
 }
