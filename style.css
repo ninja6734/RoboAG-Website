@@ -8,6 +8,9 @@
     --NavButtonsBorderHover: #7c5f5f;
     --hervorheben: #373030;
 }
+html{
+    scroll-behavior: smooth;;
+}
 body{
     background-color: var(--bg-style);
     margin: 0px;
@@ -128,7 +131,7 @@ a{
     bottom: 7%;
     text-align: center;
     width: 100%;
-    padding: 12px 0px;
+    padding: 16px 0px;
     background-color: var(--content-bg-style);
 }
 .teamPhotosContainer{
