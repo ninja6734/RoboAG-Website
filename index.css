@@ -1,0 +1,25 @@
+.content{
+    width: 100%;
+}
+
+#introduct{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#RoboterAGLogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dropdown-menu{
+    z-index: 20;
+}
+
+@media(min-width: 600px){
+    #introduct-text{
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+}
