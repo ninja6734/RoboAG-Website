@@ -29,7 +29,7 @@ a{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 20px 10px;
     background-color: var(--content-bg-style);
     align-content: center;
@@ -99,8 +99,8 @@ a{
 }
 .content{
     margin: 16px;
+    max-width: calc(100vw - 32px);
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 .content #RoboterAGLogo{
