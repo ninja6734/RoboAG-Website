@@ -126,27 +126,6 @@ a{
     color: var(--hervorheben);
     font-weight: 600;
 }
-.teamPhotos{
-    position: absolute;
-    bottom: 7%;
-    text-align: center;
-    width: 100%;
-    padding: 16px 0px;
-    background-color: var(--content-bg-style);
-}
-.teamPhotosContainer{
-    position: relative;
-}
-#teamPhotosContainerContainer{
-    display: flex;
-    flex-direction: column;
-}
-#teamPhotosCont{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 .alter-text{
     text-align: center;
 }
