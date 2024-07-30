@@ -58,6 +58,10 @@ a{
     border-style: solid;
     border-color: var(--NavButtonsBorder);
 }
+.MenuButton:hover{
+    background-color: var(--NavButtonsHover);
+    border-color: var(--NavButtonsBorderHover);
+}
 .dropdown{
     margin-left: auto;
     margin-right: 40px;
@@ -107,6 +111,9 @@ a{
     min-width: inherit;
 }
 .content-block{
+    border-radius: 20px;
+    border-width: 15px;
+    
     padding: 12px;
     background-color: var(--content-bg-style);
     margin: 12px;

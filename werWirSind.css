@@ -9,19 +9,22 @@
 }
 .teamPhotosContainer{
     width: 25%;
+    position: relative;
+}
+.teamPhotos{
+    font-size: 80%;
 }
 
-.teamPhotos{
-    position: absolute;
-    bottom: 7%;
-    text-align: center;
-    width: 100%;
-    height: 10%;
-    padding: 6% 0px;
-    background-color: var(--content-bg-style);
-}
-.teamPhotosContainer{
-    position: relative;
+@media(min-width: 600px){
+    .teamPhotos{
+        position: absolute;
+        bottom: 7%;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        padding: 6% 0px;
+        background-color: var(--content-bg-style);
+    }
 }
 #teamPhotosContainerContainer{
     display: flex;
@@ -32,4 +35,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+#Teilnehmer-cb{
+    justify-content: center;
+}
+#TeilnehmerUpperCb{
+    justify-content: center;
+    width: 100%;
 }
