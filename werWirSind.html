@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Roboter-AG</title>
+        <script src="script.js"></script>
     </head>
     <body>
         <nav class="Navigation">
@@ -32,41 +33,47 @@
             </div>
         </nav>
         <div class="content">
-            <div class="content-block">
-                <img src="img/Teilnehmer.png" alt="Teilnehmer">
-                <p class="alter-text">Die Teilnehmer der Roboter-AG</p>
-            </div>
-            <div class="content-block">
-                <h2 class="hervorheben">Über uns:</h2>
-                <p>Ca. 45 von Technik begesiterte junge Leute.
-                <p>5 Ehrenamtliche Betreuer.</p>
-                <p>Ca. 15 Teams.</p>
-                <p>Bauen autonome Roboter.</p>
-                <p>Spielen in 8 Ligen.</p>
-                <p>AG Treffen von 14 bis 18 Uhr.</p>
-                <p>Zusätzlich Zuhause arbeiten.</p>
-                <p>Treffen an Sonderterminen.</p>
-                <p>Weiterbildungsmaßnahmen: <span class="hervorheben">SIA - Schüler Ingenieur Akademie</span> sowie <span class="hervorheben">Exkursion</span></p>
+            <div id="TeilnehmmerUpperCb">
+                <div class="content-block" id="Teilnehmer-cb">
+                    <h2 class="alter-text">Die Teilnehmer der Roboter-AG</h2>
+                    <div id="TeilnehmerImg">
+                        <img src="img/Teilnehmer.png" alt="Teilnehmer">
+                        <div id="ÜberUns">
+                            <h2 class="hervorheben">Über uns:</h2>
+                            <ul>
+                                <li>Ca. 45 von Technik begesiterte junge Leute.</li>
+                                <li>5 Ehrenamtliche Betreuer.</li>
+                                <li>Ca. 15 Teams.</li>
+                                <li>Bauen autonome Roboter.</li>
+                                <li>Spielen in 8 Ligen.</li>
+                                <li>AG Treffen von 14 bis 18 Uhr.</li>
+                                <li>Zusätzlich Zuhause arbeiten.</li>
+                                <li>Treffen an Sonderterminen.</li>
+                                <li>Weiterbildungsmaßnahmen: <ul><li class="hervorheben">SIA - Schüler Ingenieur Akademie</li><li class="hervorheben">Exkursion</li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="teamPhotosContainerContainer">
                 <h1 class="hervorheben alter-text">Die aktuellen Teams sind die folgenden:</h1>
                 <div id="teamPhotosCont">
                     <div class="teamPhotosContainer">
-                        <img src="img/Teilnehmer.png" alt="BodenseeLuchse Foto">
+                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeLuchse Foto">
                         <p class="teamPhotos">
                             BodenseeLuchse
                         </p>
                         </img>
                     </div>
                     <div class="teamPhotosContainer">
-                        <img src="img/Teilnehmer.png" alt="BodenseeGiraffen Foto">
+                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeGiraffen Foto">
                         <p class="teamPhotos">
                             BodenseeGiraffen
                         </p>
                         </img>
                     </div>
                     <div class="teamPhotosContainer">
-                        <img src="img/Teilnehmer.png" alt="BodenseeKoalas Foto">
+                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeKoalas Foto">
                         <p class="teamPhotos">
                             BodenseeKoalas
                         </p>
