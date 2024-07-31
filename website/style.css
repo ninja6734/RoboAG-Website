@@ -1,12 +1,13 @@
-:root{
-    --bg-style: #eedbdb;
-    --content-bg-style: #dcb7b7c4;
-    --second-content-bg-style: #bd9b9bc4;
-    --NavButtons: #c0a1a1;
-    --NavButtonsHover: #987676;
-    --NavButtonsBorder: #a07c7c;
-    --NavButtonsBorderHover: #7c5f5f;
-    --hervorheben: #373030;
+:root {
+    --bg-style: hsl(240 7% 07% / 1);
+    --content-bg-style: hsl(234 7% 10% / 0.8);
+    --NavButtons: hsl(240 6% 17% / 1);
+    --NavButtonsHover: hsl(240 6% 13% / 1);
+    --NavButtonsBorder: hsl(240 6% 8% / 1);
+    --NavButtonsBorderHover: var(--NavButtonsBorder);
+    --hervorheben: #a0cdca;
+    --secHervorheben: #7a9391;
+    --text: #757778;
 }
 html{
     scroll-behavior: smooth;;
@@ -18,11 +19,14 @@ body{
 * {
     font-family: "Sarabun", sans-serif;
 }
+p, h1, h2, h3, h4, h5 , h6, span, li, th, td{
+    color : var(--text);
+}
 img {
     max-width: 100%;
 }
 a{
-    color: var(--hervorheben);
+    color: var(--secHervorheben);
     font-weight: 600;
 }
 .Navigation{
@@ -42,7 +46,7 @@ a{
     border-width: 4px;
     border-style: solid;
     border-color: var(--NavButtonsBorder);
-    transition: padding 0.5s ease;
+    transition: 0.5s ease;
 }
 .NavButton:hover{
     background-color: var(--NavButtonsHover);
@@ -57,6 +61,7 @@ a{
     border-width: 4px;
     border-style: solid;
     border-color: var(--NavButtonsBorder);
+    transition: 0.5s ease;
 }
 .MenuButton:hover{
     background-color: var(--NavButtonsHover);
@@ -120,7 +125,7 @@ a{
 }
 .content-block-inner{
     padding: 12px;
-    background-color: var(--second-content-bg-style);
+    color: transparent;
     margin: 12px;
 }
 .content-block .alter-text{
@@ -132,6 +137,10 @@ a{
 .hervorheben{
     color: var(--hervorheben);
     font-weight: 600;
+}
+.secHervorheben{
+    color: var(--secHervorheben);
+    font-weight: 500;
 }
 .alter-text{
     text-align: center;
