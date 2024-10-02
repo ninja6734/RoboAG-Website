@@ -1,26 +1,80 @@
-.content{
-    width: 100%;
-    justify-content: center;
+#TeilnehmerImg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
-#introduct{
+#ÜberUns{
+    display: inline-block;
+    max-width: fit-content;
+}
+.teamPhotosContainer{
+    width: 25%;
     position: relative;
-    width: 140vh;
-    height: 80vh;
+    justify-items: left;
 }
-#RoboterAGLogo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.dropdown-menu{
-    z-index: 20;
+.teamPhotos{
+    font-size: 80%;
 }
 
 @media(min-width: 600px){
-    #introduct-text{
+    .teamPhotos{
         position: absolute;
-        top: 10%;
-        left: 4%;
+        bottom: 7%;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        padding: 6% 0px;
+        background-color: var(--content-bg-style);
     }
+}
+#teamPhotosContainerContainer{
+    margin: 0 24px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+#teamPhotosCont{
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#Teilnehmer-cb{
+    justify-content: center;
+}
+#TeilnehmerUpperCb{
+    justify-content: center;
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+.ZieleListItem{
+    padding: 0;
+    background-color: var(--content-bg-style);
+    width: 100%;
+}
+.ZieleListItemTwo{
+    padding: 0;
+    background-color: var(--secondary-content-bg-style);
+    width: 100%;
+}
+#ZieleList{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.ListItemParagraph{
+    margin: 6px 10px;
+    padding: 8px 0;
+}
+#ZieleContainer{
+    max-width: 100%;
+    width: 800px;
+}
+.ZieleListSpanTypeOne{
+    font-size: 16px;
+}
+.ZieleListSpanTypeTwo{
+    font-size: 12px;
 }

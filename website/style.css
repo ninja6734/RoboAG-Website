@@ -1,13 +1,12 @@
 :root {
-    --bg-style: hsl(240 7% 07% / 1);
-    --content-bg-style: hsl(234 7% 10% / 0.8);
-    --NavButtons: hsl(240 6% 17% / 1);
-    --NavButtonsHover: hsl(240 6% 13% / 1);
-    --NavButtonsBorder: hsl(240 6% 8% / 1);
-    --NavButtonsBorderHover: var(--NavButtonsBorder);
-    --hervorheben: #a0cdca;
-    --secHervorheben: #7a9391;
-    --text: #757778;
+    --bg-style: hsl(240, 3%, 15%);
+    --content-bg-style: hsla(240, 2%, 20%, 0.94);
+    --secondary-content-bg-style: hsla(240, 2%, 12%, 0.94);
+    --NavButtons: hsl(240, 3%, 14%);
+    --NavButtonsBorder: hsl(240, 2%, 8%);
+    --hervorheben: #dce9e7;
+    --secHervorheben: #abb4b4;
+    --text: #a4a9ab;
 }
 html{
     scroll-behavior: smooth;;
@@ -17,6 +16,7 @@ body{
     margin: 0px;
 }
 * {
+    color: #aeb8b6;
     font-family: "Sarabun", sans-serif;
 }
 p, h1, h2, h3, h4, h5 , h6, span, li, th, td{
@@ -29,26 +29,31 @@ a{
     color: var(--secHervorheben);
     font-weight: 600;
 }
+button:hover{
+    cursor: pointer;
+}
 .Navigation{
+    position: fixed;
+    top: 0px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     width: calc(100% - 20px);
-    padding: 20px 10px;
     background-color: var(--content-bg-style);
-    align-content: center;
+    align-items: center;
 }
 .NavButton{
     padding: 10px 20px;
     height: auto;
-    background-color: var(--NavButtons);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 9px;
-    border-width: 4px;
+    border-width: 0;
     border-style: solid;
-    border-color: var(--NavButtonsBorder);
+    border-color: hsla(240, 2%, 20%, 0);
     transition: 0.5s ease;
 }
 .NavButton:hover{
+    text-decoration: underline;
     background-color: var(--NavButtonsHover);
     border-color: var(--NavButtonsBorderHover);
 }
@@ -108,6 +113,7 @@ a{
 }
 .content{
     margin: 16px;
+    margin-top: 50px;
     max-width: calc(100vw - 32px);
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +126,6 @@ a{
     border-width: 15px;
     
     padding: 12px;
-    background-color: var(--content-bg-style);
     margin: 12px;
 }
 .content-block-inner{
