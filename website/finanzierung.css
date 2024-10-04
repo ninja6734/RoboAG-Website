@@ -1,0 +1,17 @@
+#Sponsoring{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media(min-width:1000px){
+    #SponsoringList{
+        max-width: 45%;
+        margin-right: 3%;
+    }
+    .SponsorGrid{
+        max-width: 45%;
+    }
+}
+#sponsorBlock{
+    width:100%
+}

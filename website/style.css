@@ -7,6 +7,7 @@
     --hervorheben: #dce9e7;
     --secHervorheben: #abb4b4;
     --text: #a4a9ab;
+    --dropdownMenuTransparent: hsla(240, 2%, 12%, 0.94);
 }
 html{
     scroll-behavior: smooth;;
@@ -38,7 +39,7 @@ button:hover{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    width: calc(100% - 20px);
+    width: 100%;
     background-color: var(--content-bg-style);
     align-items: center;
 }
@@ -61,16 +62,10 @@ button:hover{
     height: 32px;
 }
 .MenuButton{
-    background-color: var(--NavButtons);
+    background-color: hsla(240, 2%, 20%, 0);
     border-radius: 9px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: var(--NavButtonsBorder);
+    border-style: none;
     transition: 0.5s ease;
-}
-.MenuButton:hover{
-    background-color: var(--NavButtonsHover);
-    border-color: var(--NavButtonsBorderHover);
 }
 .dropdown{
     margin-left: auto;
@@ -84,28 +79,34 @@ button:hover{
     display: none;
     position: absolute;
     right: 30px;
-    padding: 13px;
-    background-color: var(--bg-style);
+    padding: 5px;
+    background-color: var(--dropdownMenuTransparent);
+    border: rgb(223, 236, 234) solid 2px;
+    border-radius: 9px;
 }
 .dropdown:hover .dropdown-menu{
     display: block !important;
 }
 .dropdown-menu-button-menu{
-    background-color: var(--NavButtons);
+    background-color: hsla(240, 2%, 20%, 0);
     width: 200px;
-    margin: 10px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border: var(--NavButtonsBorder) solid 3px;
+    margin: 2px auto;
+    border: none;
     border-radius: 9px;
 }
 .dropdown-menu-button{
+    padding: 10px;
     background-color: #00000000;
     border-width: 0px;
     width: 100%;
     height: 100%;
     text-align: left;
+    border-radius: 9px;
+}
+.dropdown-menu-button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #343131;
 }
 .dropdown-menu-button-menu:hover{
     background-color: var(--NavButtonsHover);
@@ -113,7 +114,7 @@ button:hover{
 }
 .content{
     margin: 16px;
-    margin-top: 50px;
+    margin-top: 60px;
     max-width: calc(100vw - 32px);
     display: flex;
     flex-wrap: wrap;
