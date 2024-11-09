@@ -1,0 +1,10 @@
+#LigenLinks{
+    display: flex;
+    gap: 20px;
+}
+.LigenUebersicht{
+    display: block;
+}
+.LigenUebersicht p{
+    font-size: 1.2vh;
+}

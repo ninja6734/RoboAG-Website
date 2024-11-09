@@ -81,7 +81,7 @@ button:hover{
     right: 30px;
     padding: 5px;
     background-color: var(--dropdownMenuTransparent);
-    border: rgb(223, 236, 234) solid 2px;
+    border: rgb(44, 44, 45) solid 4px;
     border-radius: 9px;
 }
 .dropdown:hover .dropdown-menu{
