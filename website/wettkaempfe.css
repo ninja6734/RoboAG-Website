@@ -1,11 +1,27 @@
-.WettkampfContainer{
+#WettkampfContainer{
+    list-style: none;
+}
+.WettkampfCont{
+    padding: 14px;
+    border-radius: 8px;
     display: flex;
-    gap: 30px;
-    margin: 72px 16px;
+    gap: 40px;
+    background-color: rgb(57, 57, 60);
+    box-shadow: -6px 6px 1px -1px rgb(22, 22, 23), 6px 6px 1px -1px rgb(22, 22, 23);
 }
-#TestWettkampf{
-    margin-top: 100px;
+#WettkampfContainer:nth-of-type(even) .WettkampfCont{
+    background-color: rgb(39, 39, 41);
+    box-shadow: -6px 6px 1px -1px rgb(4, 4, 5), 6px 6px 1px -1px rgb(4, 4, 5);
 }
-li {
-    max-width: 50%;
+#WettkampfContainer:nth-of-type(even) .WettkampfCont li{
+    color: rgb(125, 132, 137);
+}
+.Information{
+    display: block;
+    width: 50%;
+}
+.ImageButton{
+    border: none;
+    padding: 0;
+    margin: 0;
 }

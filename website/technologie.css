@@ -1,0 +1,22 @@
+.tableHeader{
+    background-color: rgb(20, 20, 21);
+    border: rgb(47, 47, 49) 5px hidden;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border:rgb(49, 49, 52) solid 3px;
+}
+th{
+    background-color: rgb(10,10,11);
+    padding: 10px;
+}
+#TechTable th,td{
+    padding: 12px 6px;
+}
+#TechTable tr{
+    border-bottom:rgb(90, 90, 94) solid 1px;
+}
+tr:nth-of-type(even){
+    background-color: rgb(49, 49, 52);
+}
