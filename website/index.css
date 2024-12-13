@@ -13,7 +13,7 @@
     justify-items: left;
 }
 .teamPhotos{
-    font-size: 80%;
+    font-size: 0.8em;
 }
 
 @media(min-width: 600px){
@@ -23,8 +23,8 @@
         text-align: center;
         width: 100%;
         height: 10%;
-        padding: 6% 0px;
-        background-color: var(--content-bg-style);
+        padding: 2% 0px;
+        background-color: hsla(240, 2%, 20%, 0.7);
     }
 }
 #teamPhotosContainerContainer{
@@ -49,20 +49,20 @@
 table{
     width: 100%;
 }
-.ZieleListItem{
-    padding: 0;
-    background-color: var(--content-bg-style);
-    width: 100%;
-}
-.ZieleListItemTwo{
-    padding: 0;
-    background-color: var(--secondary-content-bg-style);
-    width: 100%;
-}
 #ZieleList{
     list-style: none;
     padding: 0;
     width: 100%;
+}
+#ZieleList li{
+    padding: 0;
+    background-color: var(--content-bg-style);
+    width: 100%;
+    border-bottom: rgb(66, 66, 69) 1px solid;
+}
+#ZieleList li:nth-of-type(even){
+    background-color: var(--secondary-content-bg-style);
+    border-bottom: rgb(50, 50, 52) 1px solid;
 }
 .ListItemParagraph{
     margin: 6px 10px;
