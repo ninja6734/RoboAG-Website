@@ -1,10 +1,30 @@
-#LigenLinks{
+#LigenLinks {
     display: flex;
     gap: 20px;
 }
-.LigenUebersicht{
+
+.LigenUebersicht {
     display: block;
 }
-.LigenUebersicht p{
+
+.LigenUebersicht p {
     font-size: 1.2vh;
+}
+
+#entryLeagueImg {
+    border-radius: 15px;
+}
+.content-block{
+    background-color: rgb(45, 49, 53);
+}
+
+@media screen and (min-width: 1100px){
+    .content-block {
+        width: calc(50% - 48px);
+
+    }
+
+    .content-block-inner {
+        width: calc(50% - 48px);
+    }
 }
