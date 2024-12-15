@@ -8,6 +8,11 @@ function initCss(){
         css.rel = "stylesheet";
 
         document.head.appendChild(css);
+
+    if(filename == "news.html"){
+        let newsContainer = url.substring(0, url.lastIndexOf("/")) + "/news/exampleNews.html";
+        console.log(fetch(newsContainer));
+    }
 }
 
 window.onload = function(){
