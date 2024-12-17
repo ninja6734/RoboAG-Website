@@ -4,7 +4,7 @@
     --secondary-content-bg-style: hsla(240, 2%, 12%, 0.94);
     --NavButtons: hsl(240, 3%, 14%);
     --NavButtonsBorder: hsl(240, 2%, 8%);
-    --NavButtonsHover: hsla(0, 75%, 11%, 0.436);
+    --NavButtonsHover: hsla(0, 73%, 4%, 0.436);
     --hervorheben: #dce9e7;
     --secHervorheben: #abb4b4;
     --text: #a4a9ab;
@@ -86,7 +86,7 @@ button:hover{
     right: 30px;
     padding: 5px;
     background-color: var(--dropdownMenuTransparent);
-    border: rgb(44, 44, 45) solid 4px;
+    border: rgb(44, 44, 45) solid 1px;
     border-radius: 9px;
 }
 .dropdown:hover .dropdown-menu{
@@ -111,7 +111,7 @@ button:hover{
 .dropdown-menu-button:hover{
     cursor: pointer;
     text-decoration: underline;
-    background-color: #343131;
+    background-color: #16020275;
 }
 .dropdown-menu-button-menu:hover{
     background-color: var(--NavButtonsHover);
