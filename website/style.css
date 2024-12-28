@@ -4,7 +4,7 @@
     --secondary-content-bg-style: hsla(240, 2%, 12%, 0.94);
     --NavButtons: hsl(240, 3%, 14%);
     --NavButtonsBorder: hsl(240, 2%, 8%);
-    --NavButtonsHover: hsla(0, 75%, 11%, 0.436);
+    --NavButtonsHover: #31272770;
     --hervorheben: #dce9e7;
     --secHervorheben: #abb4b4;
     --text: #a4a9ab;
