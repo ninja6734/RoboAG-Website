@@ -9,25 +9,20 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <nav class="Navigation">
-            <a href="index.html"><button class="NavButton" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
-            <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
-            <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
-            <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+        <nav class="nav-bar">
+            <div class="nav-buttons">
+                <a href="index.html"><button class="NavButton" id="NavButtonImg" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
+                <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
+                <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
+                <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+                <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
+                <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
+            </div>
             <div class="dropdown">
-                <button class="MenuButton" type="button">
+                <button class="dropdown-btn"  id="NavButtonImg" type="button">
                     <img src="ico/menu.svg" alt="menu_icon">
                 </button>
-                <div class="dropdown-menu">
-                    <div class = "dropdown-menu-button-menu" id="Finanzierung">
-                        <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="News">
-                        <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="Fazit">
-                        <a href="fazit.html"><button class="dropdown-menu-button" type="button">Fazit</button></a>
-                    </div>
+                <div class="dropdown-content">
                 </div>
             </div>
         </nav>
