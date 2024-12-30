@@ -84,7 +84,7 @@ button:hover{
   }
   
   .dropdown-content {
-    display: block;
+    display: none;
     position: absolute;
     padding: 10px;
     top: 100%;
@@ -114,7 +114,6 @@ button:hover{
   }
 .content{
     margin: 16px;
-    margin-top: 60px;
     max-width: calc(100vw - 32px);
     display: flex;
     flex-wrap: wrap;

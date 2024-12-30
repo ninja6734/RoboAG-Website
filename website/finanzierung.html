@@ -9,36 +9,48 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <nav class="Navigation">
-            <a href="index.html"><button class="NavButton" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
-            <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
-            <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
-            <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+        <nav class="nav-bar">
+            <div class="nav-buttons">
+                <a href="index.html"><button class="NavButton" id="NavButtonImg" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
+                <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
+                <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
+                <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+                <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
+                <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
+            </div>
             <div class="dropdown">
-                <button class="MenuButton" type="button">
+                <button class="dropdown-btn"  id="NavButtonImg" type="button">
                     <img src="ico/menu.svg" alt="menu_icon">
                 </button>
-                <div class="dropdown-menu">
-                    <div class = "dropdown-menu-button-menu" id="Finanzierung">
-                        <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="News">
-                        <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
-                    </div>
+                <div class="dropdown-content">
                 </div>
             </div>
         </nav>
         <div class="content">
             <div class="content-block" id="sponsorBlock">
-                <h2>Sponsoring</h2>
-                <div id="Sponsoring">
-                    <ul id="SponsoringList">
-                        <li>Hauptsächlich wird die AG durch Sach- und Geldspenden gesponsort.</li>
-                        <li>Auch stellt das Bildungszentrum Markdorf weitere Räume und Equipment zur verfügung.</li>
-                        <li>Die Kosten die durch die EM und WM anfallen müssen von den Schülern selbst durch Spenden erworben werden.</li>
-                    </ul>
+                <h2>Vorschau aller Sponsoren: </h2>
                     <div class="SponsorGrid">
                         
+                    </div>
+                <h2>Informationen zum Spenden: </h2>
+                <div id="SponsorHow">
+                    <div id="Sponsoring">
+                        <h3>Sponsoring</h3>
+                        <ul id="SponsoringList">
+                            <li>Hauptsächlich wird die AG durch Sach- und Geldspenden gesponsort.</li>
+                            <li>Dazu stellt das Bildungszentrum Markdorf einige Räume zur Verfügung.</li>
+                            <li>Die Kosten die durch die EM und WM anfallen müssen von den Schülern selbst durch Spenden erworben werden.</li>
+                        </ul>
+                    </div>
+                    <div id="SponsorAn">
+                        <h3>Spenden sie an: </h3>
+                        <p class="SponsorTitle">Förderverein des Gymnasium Markdorf (Bodensee)</p>
+                        <p class="SponsorAttr">Hier Informationen zum Spenden hinzufügen</p>
+                    </div>
+                    <div id="SponsorKontakt">
+                        <h3>Ansprechpartner: </h3>
+                        <p class="SponsorAttr">Ansprechperson 1</p>
+                        <a class="SponsorAttr" href="mailto:email.address@example.com"><button type="button" class="mailBtn"><img src="ico/mail.svg" alt="mail icon"><span class="mailBtnText">email.address@example.com</span></button></a>
                     </div>
                 </div>
             </div>
