@@ -53,7 +53,7 @@ button:hover{
   
   .nav-buttons button {
     color: white;
-    background-color: #444;
+    background-color: #00000000;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -64,7 +64,9 @@ button:hover{
   }
   
   .nav-buttons button:hover {
-    background-color: #555;
+    text-decoration: underline;
+    text-decoration-color: #ff2e2e;
+    text-decoration-thickness: 2px;
   }
   
   .dropdown {
@@ -157,19 +159,17 @@ button:hover{
     flex-wrap: wrap;
     gap: 50px;
 }
-#LigenLinks{
-    display: block;
-    min-width: fit-content;
-}
-.LigenPictureShowcase{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.LigenPhoto{
-    object-fit: fill;
-}
 .flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ff2e2e;
+  text-decoration-thickness: 2px;
 }
