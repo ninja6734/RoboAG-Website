@@ -9,109 +9,192 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <nav class="Navigation">
-            <a href="index.html"><button class="NavButton" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
-            <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
-            <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
-            <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+        <nav class="nav-bar">
+            <div class="nav-buttons">
+                <a href="index.html"><button class="NavButton" id="NavButtonImg" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
+                <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
+                <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
+                <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+                <a href="finanzierung.html"><button class="NavButton" type="button">Finanzierung</button></a>
+                <a href="news.html"><button class="NavButton" type="button">News</button></a>
+            </div>
             <div class="dropdown">
-                <button class="MenuButton" type="button">
+                <button class="dropdown-btn"  id="NavButtonImg" type="button">
                     <img src="ico/menu.svg" alt="menu_icon">
                 </button>
-                <div class="dropdown-menu">
-                    <div class = "dropdown-menu-button-menu" id="Finanzierung">
-                        <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="News">
-                        <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="Fazit">
-                        <a href="fazit.html"><button class="dropdown-menu-button" type="button">Fazit</button></a>
-                    </div>
+                <div class="dropdown-content">
                 </div>
             </div>
         </nav>
-        <div class="content">
-            <div id="TeilnehmmerUpperCb">
-                <div class="content-block" id="Teilnehmer-cb">
-                    <h2 class="alter-text">Die Teilnehmer der Roboter-AG</h2>
-                    <div id="TeilnehmerImg">
-                        <img src="img/Teilnehmer.png" alt="Teilnehmer">
-                        <div id="ÜberUns">
-                            <h2 class="hervorheben">Über uns:</h2>
-                            <ul>
-                                <li>Ca. 45 von Technik begesiterte junge Leute.</li>
-                                <li>5 Ehrenamtliche Betreuer.</li>
-                                <li>Ca. 15 Teams.</li>
-                                <li>Bauen autonome Roboter.</li>
-                                <li>Spielen in 8 Ligen.</li>
-                                <li>AG Treffen von 14 bis 18 Uhr.</li>
-                                <li>Zusätzlich Zuhause arbeiten.</li>
-                                <li>Treffen an Sonderterminen.</li>
-                                <li>Weiterbildungsmaßnahmen: <ul><li class="secHervorheben">SIA - Schüler Ingenieur Akademie</li><li class="secHervorheben">Exkursion</li></li>
-                            </ul>
+        <div>
+            <h2 class="alter-text">Die Teilnehmer der Roboter-AG</h2>
+                <div id="TeilnehmmerUpperCb">
+                    <div class="content-block" id="Teilnehmer-cb">
+                        <div id="TeilnehmerImg">
+                            <div id="ÜberUns">
+                                <h2 class="hervorheben">Über uns:</h2>
+                                <div id="ZieleListCont">
+                                    <ul id="ZieleList">
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Ca. 45 von Technik begeisterte junge Leute</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">5 Ehrenamtliche Betreuer</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Ca. 15 Teams</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Bauen autonome Roboter</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Spielen in 8 <a href="Ligen.html">Ligen</a></span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">AG Treffen Freitags von 14 bis 18 Uhr</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Zusätzlich Zuhause arbeiten</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Treffen an Sonderterminen</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Weiterbildungsmaßnahmen</span><br><span class="ZieleListSpanTypeTwo">SIA - Schüler Ingenieur Akademie oder Exkursion</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div id="ZieleContainer">
+                            <h2 class="hervorheben alter-text">Unsere Ziele</h2>
+                                <div id="ZieleListCont">
+                                    <ul id="ZieleList">
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Ingeniuermäßige Ausbildung</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Förderung der Interesse am MINT-Bereich</span><br><span class="ZieleListSpanTypeTwo">Förderung der Interesse an Mathe Informatik Naturwissenschaften sowie in Technik (MINT)</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Selbstständiges, teamorientiertes Arbeiten</span><br><span class="ZieleListSpanTypeTwo">Arbeiten im Team sowie Selbstständiges Arbeiten erlernen</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Offenes Auftreten</span>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="ListItemParagraph">
+                                                <span class="ZieleListSpanTypeOne">Souveränes Präsentieren</span><br><span class="ZieleListSpanTypeTwo">Förderung des Präsentieres. Auch in Englisch.</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                <div id="teamPhotosContainerContainer">
+                    <h1 class="hervorheben alter-text">Die aktuellen Teams sind die folgenden:</h1>
+                    <div id="teamPhotosCont">
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Adler
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Devils
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Giraffen
+                            </p>
+                        </div><div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee J's
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Koalas
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Luchse
+                            </p>
+                        </div><div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Dogs
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Drachen
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Fische
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Schlangen
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                Bodensee Beaver
+                            </p>
+                        </div>
+                        <div class="teamPhotosContainer">
+                            <img class="TeamPhotoImg" src="img/Teilnehmer.jpg">
+                            <p class="teamPhotos">
+                                BodenseeGiraffen
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="teamPhotosContainerContainer">
-                <h1 class="hervorheben alter-text">Die aktuellen Teams sind die folgenden:</h1>
-                <div id="teamPhotosCont">
-                    <div class="teamPhotosContainer">
-                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeLuchse Foto">
-                        <p class="teamPhotos">
-                            BodenseeLuchse
-                        </p>
-                        </img>
-                    </div>
-                    <div class="teamPhotosContainer">
-                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeGiraffen Foto">
-                        <p class="teamPhotos">
-                            BodenseeGiraffen
-                        </p>
-                        </img>
-                    </div>
-                    <div class="teamPhotosContainer">
-                        <img class="TeamPhotoImg" src="img/Teilnehmer.png" alt="BodenseeKoalas Foto">
-                        <p class="teamPhotos">
-                            BodenseeKoalas
-                        </p>
-                        </img>
-                    </div>
-                </div>
-            </div>
-            <div id="ZieleContainer">
-                <h1 class="hervorheben alter-text">Unsere Ziele</h1>
-                    <div class="content-block">
-                        <ul id="ZieleList">
-                            <li>
-                                <p class="ListItemParagraph">
-                                    <span class="ZieleListSpanTypeOne">Ingeniuermäßige Ausbildung</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="ListItemParagraph">
-                                    <span class="ZieleListSpanTypeOne">Förderung der Interesse am MINT-Bereich</span><br><span class="ZieleListSpanTypeTwo">Förderung der Interesse an Mathe Informatik Naturwissenschaften sowie in Technik (MINT)</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="ListItemParagraph">
-                                    <span class="ZieleListSpanTypeOne">Selbstständiges, teamorientiertes Arbeiten</span><br><span class="ZieleListSpanTypeTwo">Arbeiten im Team sowie Selbstständiges Arbeiten erlernen</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="ListItemParagraph">
-                                    <span class="ZieleListSpanTypeOne">Offenes Auftreten</span>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="ListItemParagraph">
-                                    <span class="ZieleListSpanTypeOne">Souveränes Präsentieren</span><br><span class="ZieleListSpanTypeTwo">Förderung des Präsentieres. Auch in Englisch.</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
+            
     </body>
 </html>

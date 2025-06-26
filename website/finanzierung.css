@@ -1,17 +1,72 @@
-#Sponsoring{
+
+#sponsorBlock{
+    width:100%
+}
+#SponsorHow{
+    gap: 30px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 12px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#SponsorAn{
+    background-color: #444;
+    padding: 12px;
+    border-radius: 5px;
+    flex-basis: 100%;
+}
+#SponsorKontakt{
+    background-color: #444;
+    padding: 12px;
+    border-radius: 5px;
+    flex-basis: 100%;
+}
+#Sponsoring{
+    background-color: #444;
+    padding: 12px;
+    border-radius: 5px;
+    flex-basis: 100%;
+}
+.mailBtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px #000 solid;
+    background-color: #bbb;
+}
+.mailBtn:hover{
+    background-color: #999;
+}
+.mailBtnText{
+    display: inline;
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.SponsorTitle{
+    font-size: 0.8rem;
 }
 @media(min-width:1000px){
     #SponsoringList{
-        max-width: 45%;
         margin-right: 3%;
     }
     .SponsorGrid{
         max-width: 45%;
     }
 }
-#sponsorBlock{
-    width:100%
+@media(max-width: 1225px){
+    #SponsorHow{
+        flex-direction: column;
+    }
+    #Sponsoring{
+        width: 97%;
+    }
 }

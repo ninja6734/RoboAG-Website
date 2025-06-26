@@ -8,9 +8,10 @@
     max-width: fit-content;
 }
 .teamPhotosContainer{
-    width: 25%;
+    margin: 12px;
+    width: 80%;
     position: relative;
-    justify-items: left;
+    justify-items: center;
 }
 .teamPhotos{
     font-size: 0.8em;
@@ -34,22 +35,24 @@
     flex-direction: column;
 }
 #teamPhotosCont{
-    justify-content: left;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 #Teilnehmer-cb{
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    width :100%;
 }
 #TeilnehmerUpperCb{
-    justify-content: center;
     width: 100%;
 }
 table{
     width: 100%;
 }
 #ZieleList{
+    margin: 0px;
     list-style: none;
     padding: 0;
     width: 100%;
@@ -69,12 +72,17 @@ table{
     padding: 8px 0;
 }
 #ZieleContainer{
-    max-width: 100%;
-    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .ZieleListSpanTypeOne{
     font-size: 16px;
 }
 .ZieleListSpanTypeTwo{
     font-size: 12px;
+}
+#ZieleListCont{
+    width: 800px;
+    max-width: 100%;
 }

@@ -4,7 +4,7 @@
     --secondary-content-bg-style: hsla(240, 2%, 12%, 0.94);
     --NavButtons: hsl(240, 3%, 14%);
     --NavButtonsBorder: hsl(240, 2%, 8%);
-    --NavButtonsHover: hsla(0, 75%, 11%, 0.436);
+    --NavButtonsHover: #31272770;
     --hervorheben: #dce9e7;
     --secHervorheben: #abb4b4;
     --text: #a4a9ab;
@@ -34,92 +34,88 @@ a{
 button:hover{
     cursor: pointer;
 }
-.Navigation{
-    position: fixed;
-    top: 0px;
+.nav-bar {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: var(--content-bg-style);
     align-items: center;
-}
-.NavButton{
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    flex-grow: 1;
+  }
+  .nav-buttons img{
+    max-width: 30px;
+  }
+  
+  .nav-buttons button {
+    color: white;
+    background-color: #00000000;
+    border: none;
     padding: 10px 20px;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 9px;
-    border-width: 0;
-    border-style: solid;
-    border-color: hsla(240, 2%, 20%, 0);
-    transition: 0.5s ease;
-}
-.NavButton:hover{
+    cursor: pointer;
+  }
+  #NavButtonImg{
+    padding : 0 5px;
+    max-height: 35px;
+  }
+  
+  .nav-buttons button:hover {
     text-decoration: underline;
-    background-color: var(--NavButtonsHover);
-    border-color: var(--NavButtonsBorderHover);
-}
-.NavButtonImg{
-    height: 32px;
-}
-.MenuButton{
-    background-color: hsla(240, 2%, 20%, 0);
-    border-radius: 9px;
-    padding: 15px;
-    border-style: none;
-    transition: 0.5s ease;
-}
-.MenuButton img{
-    width: 20px;
-}
-.dropdown{
-    margin-left: auto;
-    margin-right: 40px;
-}
-.dropdown:hover .MenuButton{
-    background-color: var(--NavButtonsHover);
-    border-color: var(--NavButtonsBorderHover);
-}
-.dropdown-menu{
+    text-decoration-color: #ff2e2e;
+    text-decoration-thickness: 2px;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    color: white;
+    background-color: #444;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #555;
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    right: 30px;
-    padding: 5px;
-    background-color: var(--dropdownMenuTransparent);
-    border: rgb(44, 44, 45) solid 4px;
-    border-radius: 9px;
-}
-.dropdown:hover .dropdown-menu{
-    display: block !important;
-}
-.dropdown-menu-button-menu{
-    background-color: hsla(240, 2%, 20%, 0);
-    width: 200px;
-    margin: 2px auto;
-    border: none;
-    border-radius: 9px;
-}
-.dropdown-menu-button{
     padding: 10px;
-    background-color: #00000000;
-    border-width: 0px;
+    top: 100%;
+    right: 0;
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    display: block;
     width: 100%;
-    height: 100%;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
     text-align: left;
-    border-radius: 9px;
-}
-.dropdown-menu-button:hover{
     cursor: pointer;
-    text-decoration: underline;
-    background-color: #343131;
-}
-.dropdown-menu-button-menu:hover{
-    background-color: var(--NavButtonsHover);
-    border-color: var(--NavButtonsBorderHover);
-}
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #555;
+  }
+  
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
 .content{
     margin: 16px;
-    margin-top: 60px;
     max-width: calc(100vw - 32px);
     display: flex;
     flex-wrap: wrap;
@@ -163,19 +159,17 @@ button:hover{
     flex-wrap: wrap;
     gap: 50px;
 }
-#LigenLinks{
-    display: block;
-    min-width: fit-content;
-}
-.LigenPictureShowcase{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.LigenPhoto{
-    object-fit: fill;
-}
 .flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ff2e2e;
+  text-decoration-thickness: 2px;
 }

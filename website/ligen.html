@@ -9,86 +9,81 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <nav class="Navigation">
-            <a href="index.html"><button class="NavButton" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
-            <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
-            <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
-            <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+        <nav class="nav-bar">
+            <div class="nav-buttons">
+                <a href="index.html"><button class="NavButton" id="NavButtonImg" type="button"><img  class="NavButtonImg" src="img/Logo-RoboterAG.png" alt="Logo der RoboterAG"></button></a>
+                <a href="ligen.html"><button class="NavButton" type="button">Ligen</button></a>
+                <a href="technologie.html"><button class="NavButton" type="button">Techonologie</button></a>
+                <a href="wettkaempfe.html"><button class="NavButton" type="button">Wettkämpfe</button></a>
+                <a href="finanzierung.html"><button class="NavButton" type="button">Finanzierung</button></a>
+                <a href="news.html"><button class="NavButton" type="button">News</button></a>
+            </div>
             <div class="dropdown">
-                <button class="MenuButton" type="button">
+                <button class="dropdown-btn"  id="NavButtonImg" type="button">
                     <img src="ico/menu.svg" alt="menu_icon">
                 </button>
-                <div class="dropdown-menu">
-                    <div class = "dropdown-menu-button-menu" id="Finanzierung">
-                        <a href="finanzierung.html"><button class="dropdown-menu-button" type="button">Finanzierung</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="News">
-                        <a href="news.html"><button class="dropdown-menu-button" type="button">News</button></a>
-                    </div>
-                    <div class = "dropdown-menu-button-menu" id="Fazit">
-                        <a href="fazit.html"><button class="dropdown-menu-button" type="button">Fazit</button></a>
-                    </div>
+                <div class="dropdown-content">
                 </div>
             </div>
         </nav>
         <div class="content">
-            <div class="content-block">
+            <div>
                 <div class="Übersicht">
                     <div id="LigenLinks">
                         <div class="LigenUebersicht">
                             <h2 class="hervorheben">Übersicht aller Ligen:</h2>
                             <div class="LigenPictureShowcase">
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="Line Entry">
+                                    <img class="LigenPhoto" src="img/line_2.jpg" alt="Line Entry">
                                     <p class="teamPhotos">
                                         Line Entry
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="Line">
+                                    <img class="LigenPhoto" src="img/line_1.jpg" alt="Line">
                                     <p class="teamPhotos">
                                         Line
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="Maze Entry">
+                                    <img class="LigenPhoto" src="img/maze_1.jpg" alt="Maze Entry">
                                     <p class="teamPhotos">
                                         Maze Entry
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="Maze">
+                                    <img class="LigenPhoto" src="img/maze_1.jpg" alt="Maze">
                                     <p class="teamPhotos">
                                         Maze
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="1vs1 Entry">
+                                    <img class="LigenPhoto" src="img/soccer_jr_1.jpg" alt="1vs1 Entry">
                                     <p class="teamPhotos">
                                         1vs1 Entry
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="1vs1 Lightweight">
+                                    <img class="LigenPhoto" src="img/soccer_1.jpg" alt="1vs1 Lightweight">
                                     <p class="teamPhotos">
                                         1vs1 Lightweight
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="2vs2 Lightweight">
+                                    <img class="LigenPhoto" src="img/soccer_2.jpg" alt="2vs2 Lightweight">
                                     <p class="teamPhotos">
                                         2vs2 Lightweight
                                     </p>
                                     </img>
                                 </div>
                                 <div class="teamPhotosContainer LigenPicture">
-                                    <img class="LigenPhoto" src="img/missing_data.png" alt="2vs2 Open">
+                                    <img class="LigenPhoto" src="img/soccer_1.jpg" alt="2vs2 Open">
                                     <p class="teamPhotos">
                                         2vs2 Open
                                     </p>
@@ -142,6 +137,9 @@
                         <p>Lego mit Lego Controller EV3</p>
                         <p>Programmierung in <span class="hervorheben">Lego Blocks</span> und <span class="hervorheben">RobotC</span></p>
                     </div>
+                    <div class="content-block-inner">
+                        <img src="img/line_1.jpg" alt="line entry league" id="entryLeagueImg">
+                    </div>
                 </div>
             </div>
             <div class="content-block" id="Line">
@@ -164,6 +162,9 @@
                         <p>Selbstbau mit Mikrocontroller Teensy 4.0</p>
                         <p>Programmierung in <span class="hervorheben">RobotC</span> und <span class="hervorheben">C/C++</span></p>
                     </div>
+                    <div class="content-block-inner">
+                        <img src="img/line_2.jpg" alt="line entry league" id="entryLeagueImg">
+                    </div>
                 </div>
             </div>
             <div class="content-block" id="MazeEntry">
@@ -185,6 +186,9 @@
                         <h3 class="hervorheben">Technologie: </h3>
                         <p>Lego mit Lego Controller EV3</p>
                         <p>Programmierung in <span class="hervorheben">RobotC</span></p>
+                    </div>
+                    <div class="content-block-inner">
+                        <img src="img/maze_1.jpg" alt="line entry league" id="entryLeagueImg">
                     </div>
                 </div>
             </div>
@@ -213,6 +217,9 @@
                         <p>Antrieb mit 4 Motoren</p>
                         <p>Programmierung in <span class="hervorheben">C</span> und <span class="hervorheben">C++</span></p>
                     </div>
+                    <div class="content-block-inner">
+                        <img src="img/maze_2.jpg" alt="line entry league" id="entryLeagueImg">
+                    </div>
                 </div>
             </div>
             <div class="content-block" id="1vs1Entry">
@@ -236,6 +243,9 @@
                         <p>Ultraschall Abstandsmessung</p>
                         <p>Torrichtung aus Kompass</p>
                         <p>Programmierung in <span class="hervorheben">RobotC</span></p>
+                    </div>
+                    <div class="content-block-inner">
+                        <img src="img/soccer_jr_1.jpg" alt="line entry league" id="entryLeagueImg">
                     </div>
                 </div>
             </div>
@@ -262,6 +272,9 @@
                         <p>Torrichtung aus Kompass</p>
                         <p>Max. 1200g</p>
                         <p>Programmierung in <span class="hervorheben">C</span> und <span class="hervorheben">C++</span></p>
+                    </div>
+                    <div class="content-block-inner">
+                        <img src="img/soccer_1.jpg" alt="line entry league" id="entryLeagueImg">
                     </div>
                 </div>
             </div>
@@ -292,6 +305,9 @@
                         <p>Max. 1400g</p>
                         <p>Programmierung in <span class="hervorheben">C</span> und <span class="hervorheben">C++</span></p>
                     </div>
+                    <div class="content-block-inner">
+                        <img src="img/soccer_2.jpg" alt="line entry league" id="entryLeagueImg">
+                    </div>
                 </div>
             </div>
             <div class="content-block" id="2vs2Open">
@@ -320,6 +336,9 @@
                         <p>Torerkennung mit Kamera</p>
                         <p>Max. 1400g</p>
                         <p>Programmierung in <span class="hervorheben">C</span> und <span class="hervorheben">C++</span></p>
+                    </div>
+                    <div class="content-block-inner">
+                        <img src="img/soccer_1.jpg" alt="line entry league" id="entryLeagueImg">
                     </div>
                 </div>
             </div>

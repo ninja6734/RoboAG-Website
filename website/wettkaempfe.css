@@ -10,8 +10,8 @@
     box-shadow: -6px 6px 1px -1px rgb(22, 22, 23), 6px 6px 1px -1px rgb(22, 22, 23);
 }
 #WettkampfContainer:nth-of-type(even) .WettkampfCont{
-    background-color: rgb(39, 39, 41);
-    box-shadow: -6px 6px 1px -1px rgb(4, 4, 5), 6px 6px 1px -1px rgb(4, 4, 5);
+    background-color: rgb(41, 39, 39);
+    box-shadow: -6px 6px 1px -1px rgb(5, 4, 4), 6px 6px 1px -1px rgb(4, 4, 5);
 }
 #WettkampfContainer:nth-of-type(even) .WettkampfCont li{
     color: rgb(125, 132, 137);

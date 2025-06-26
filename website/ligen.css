@@ -1,10 +1,51 @@
-#LigenLinks{
+#LigenLinks {
     display: flex;
     gap: 20px;
+    max-width: 70%;
 }
-.LigenUebersicht{
+
+.LigenUebersicht {
     display: block;
+    background-color: rgb(45, 49, 53) ;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 9px;
 }
-.LigenUebersicht p{
-    font-size: 1.2vh;
+
+.LigenUebersicht p {
+    font-size: 1em;
+}
+
+#entryLeagueImg {
+    border-radius: 15px;
+}
+.content-block{
+    background-color: rgb(45, 49, 53);
+}
+#LigenLinks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    min-width: fit-content;
+}
+.LigenPictureShowcase{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+}
+.LigenPicture{
+    object-fit: fill;
+    width: 80%;
+}
+
+@media screen and (min-width: 1100px){
+    .content-block {
+        width: calc(50% - 48px);
+
+    }
+
+    .content-block-inner {
+        width: calc(50% - 48px);
+    }
 }
