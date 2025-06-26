@@ -9,9 +9,9 @@
 }
 .teamPhotosContainer{
     margin: 12px;
-    width: 25%;
+    width: 80%;
     position: relative;
-    justify-items: left;
+    justify-items: center;
 }
 .teamPhotos{
     font-size: 0.8em;
@@ -42,11 +42,10 @@
 }
 #Teilnehmer-cb{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width :100%;
 }
 #TeilnehmerUpperCb{
-    justify-content: center;
     width: 100%;
 }
 table{
@@ -76,7 +75,6 @@ table{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 .ZieleListSpanTypeOne{
     font-size: 16px;

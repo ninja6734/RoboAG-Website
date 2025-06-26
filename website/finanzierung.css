@@ -40,9 +40,16 @@
     border: 1px #000 solid;
     background-color: #bbb;
 }
+.mailBtn:hover{
+    background-color: #999;
+}
 .mailBtnText{
     display: inline;
     color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }
 .SponsorTitle{
     font-size: 0.8rem;
