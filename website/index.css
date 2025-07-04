@@ -14,7 +14,7 @@
     justify-items: center;
 }
 .teamPhotos{
-    font-size: 0.8em;
+    font-size: 2em;
 }
 
 @media(min-width: 600px){
@@ -77,12 +77,12 @@ table{
     align-items: center;
 }
 .ZieleListSpanTypeOne{
-    font-size: 16px;
+    font-size: 28px;
 }
 .ZieleListSpanTypeTwo{
-    font-size: 12px;
+    font-size: 20px;
 }
 #ZieleListCont{
     width: 800px;
-    max-width: 100%;
+    max-width: 80%;
 }
