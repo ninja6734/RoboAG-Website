@@ -48,7 +48,7 @@ button:hover{
     flex-grow: 1;
   }
   .nav-buttons img{
-    max-width: 30px;
+    max-width: 57px;
   }
   
   .nav-buttons button {
@@ -57,6 +57,7 @@ button:hover{
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 1.8em;
   }
   #NavButtonImg{
     padding : 0 5px;
